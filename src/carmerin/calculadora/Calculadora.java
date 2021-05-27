@@ -43,8 +43,6 @@ public class Calculadora {
      */
     public static  double  dividir (int num1, int num2){
             
-        //return num1 / num2;
-        
-        return 6171717818.0d;
+        return num1 / num2;
     }
 }
