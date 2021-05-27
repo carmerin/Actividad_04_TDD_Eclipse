@@ -32,8 +32,6 @@ public class Calculadora {
      */
     public static  int  multiplicar (int num1, int num2){
             
-        //return num1 * num2;
-        
-        return 242627278;
+        return num1 * num2;
     }
 }
