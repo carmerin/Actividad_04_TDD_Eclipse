@@ -9,6 +9,7 @@ public class Calculadora {
      * @return num1+ num2.
      */
     public static int  sumar (int num1, int num2){
-            return -45;
+            
+        return num1 + num2;
     }
 }
