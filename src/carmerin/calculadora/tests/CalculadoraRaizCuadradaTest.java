@@ -27,7 +27,7 @@ public class CalculadoraRaizCuadradaTest  extends CalculadoraBaseTest{
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(raiz, resultado, 0.00001d);
+		Assert.assertEquals(raiz, resultado, 0.001d);
 	}
 	
 	

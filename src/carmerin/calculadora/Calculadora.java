@@ -54,13 +54,48 @@ public class Calculadora {
     }
     
     /**
-     * Realiza la raíz cuadrada de un número por la aproximación de Bakhsali con una precisión de 0.00001. 
+     * Realiza la raíz cuadrada de un número por la aproximación de Bakhsali con una precisión de 0.001. 
      * @param num1
      * @param num2
      * @return num1 / num2.
      */
     public static float raiz_cuadrada (float num1){
             
-        return 12235262f;
+     
+        //Almacenará el cuadrado perfecto más cercano a num1
+        int cuadradoPerfectoNum1 = 0;
+         
+        //Raíz cuadrada de cuadradoPerfectoNum1
+        int raizCuadradaCuadradoPerfecto = 0;
+     
+        //Encuentra el cuadrado perfecto má cercano a num1 por aproximación
+        for (int i = (int)(num1); i > 0; i--)
+        {
+            for (int j = 1; j < i; j++)
+            {
+                if (j*j == i)
+                {
+                    cuadradoPerfectoNum1 = i;
+                    raizCuadradaCuadradoPerfecto = j;
+                    break;
+                }
+            }
+            if (cuadradoPerfectoNum1 > 0)
+                break;
+        }
+         
+        //Calcula la diferencia entre num1 y su cuadrado perfecto más cercano   
+        float diferencia = num1 - cuadradoPerfectoNum1;    
+         
+        //Calcula P
+        float P = diferencia/(2.0f*raizCuadradaCuadradoPerfecto);
+         
+        //Calcula A
+        float A = raizCuadradaCuadradoPerfecto+P;
+          
+        //Calcula la raíz cuadrada solicitada.
+        float resultado = A-((P*P)/(2.0f*A));
+        
+        return resultado;
     }
 }
