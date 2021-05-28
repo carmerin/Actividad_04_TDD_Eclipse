@@ -62,6 +62,11 @@ public class Calculadora {
     public static float raiz_cuadrada (float num1){
             
      
+        if((int) num1 < 0) {
+            
+            throw new IllegalArgumentException("La raíz cuadrada de un número negativo no está soportada.");
+        }
+        
         //Almacenará el cuadrado perfecto más cercano a num1
         int cuadradoPerfectoNum1 = 0;
          
