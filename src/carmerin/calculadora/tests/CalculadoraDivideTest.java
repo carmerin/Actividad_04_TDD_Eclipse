@@ -16,8 +16,8 @@ public class CalculadoraDivideTest  extends CalculadoraBaseTest{
 		
 		//Arrange
 		//Definimos los numeros a dividir
-		int num1 = 6;
-		int num2 = 2;
+	    float num1 = 6;
+	    float num2 = 2;
 		//Definimos el resultado
 		float resultado = 3.0f;
 		
@@ -41,8 +41,8 @@ public class CalculadoraDivideTest  extends CalculadoraBaseTest{
 		
 	        //Arrange
     		//Definimos los numeros a dividir
-    		int num1 = 4;
-    		int num2 = 0;
+	        float num1 = 4;
+	        float num2 = 0;
     		
     		//Act
     		//Llamamos al metodo a testear
@@ -54,7 +54,7 @@ public class CalculadoraDivideTest  extends CalculadoraBaseTest{
 	    }
 	    catch(IllegalArgumentException e) {
 	        
-	        Assert.assertEquals(e.getMessage(), "Division by zero is not supported");
+	        Assert.assertEquals(e.getMessage(), "La división por cero no está soportada.");
 	    }
 	    catch(Throwable t) {
 	        

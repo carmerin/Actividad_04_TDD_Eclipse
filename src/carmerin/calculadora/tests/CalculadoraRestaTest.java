@@ -9,25 +9,25 @@ public class CalculadoraRestaTest  extends CalculadoraBaseTest{
 	
 	
 	/**
-	 * Test para restar dos números enteros
+	 * Test para restar dos números
 	 */
 	@Test
 	public void testRestaDosNumeros(){
 	    
 	    //Arrange
 		//Definimos los números a restar
-		int num1 = 2;
-		int num2 = 1;
+		float num1 = 2;
+		float num2 = 1;
 		//Definimos el resultado de la resta
-		int resultado = 1;
+		float resultado = 1;
 		
 		//Act
 		//Llamamos al método a testear
-		int resta = Calculadora.restar(num1, num2);
+		float resta = Calculadora.restar(num1, num2);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(resta, resultado);
+		Assert.assertEquals(resta, resultado, 0.00001);
 	}
 	
 	
@@ -39,18 +39,18 @@ public class CalculadoraRestaTest  extends CalculadoraBaseTest{
 		
 	    //Arrange
 	    //Definimos los números a restar
-		int num1 = 1;
-		int num2 = 2;
+		float num1 = 1;
+		float num2 = 2;
 		//Definimos el resultado de la resta
-		int resultado = -1;
+		float resultado = -1;
 		
 		//Act
 		//Llamamos al método a testear
-		int resta = Calculadora.restar(num1, num2);
+		float resta = Calculadora.restar(num1, num2);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(resta, resultado);
+		Assert.assertEquals(resta, resultado, 0.00001);
 	}
 
 	/**
@@ -61,18 +61,18 @@ public class CalculadoraRestaTest  extends CalculadoraBaseTest{
 		
 	    //Arrange
 	    //Definimos los números a restar
-		int num1 = 2;
-		int num2 = 0;
+		float num1 = 2;
+		float num2 = 0;
 		//Definimos el resultado de la resta
-		int resultado = 2;
+		float resultado = 2;
 		
 		//Act
 		//Llamamos al método a testear
-		int resta = Calculadora.restar(num1, num2);
+		float resta = Calculadora.restar(num1, num2);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(resta, resultado);
+		Assert.assertEquals(resta, resultado, 0.00001);
 	}
 	
 	/**
@@ -83,16 +83,16 @@ public class CalculadoraRestaTest  extends CalculadoraBaseTest{
         
         //Arrange
         //Definimos los números a restar
-        int num1 = 2;
-        int num2 = 1;
+        float num1 = 2;
+        float num2 = 1;
         
         //Act
         //Llamamos al método a testear
-        int resta1 = Calculadora.restar(num1, num2);
-        int resta2 = Calculadora.restar(num2, num1);
+        float resta1 = Calculadora.restar(num1, num2);
+        float resta2 = Calculadora.restar(num2, num1);
         
         //Assert
         //Comprobamos que el resultado es correcto.
-        Assert.assertNotEquals(resta1, resta2);
+        Assert.assertNotEquals(resta1, resta2, 0.00001);
     }
 }

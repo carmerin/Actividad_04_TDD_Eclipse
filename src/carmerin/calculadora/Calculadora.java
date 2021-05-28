@@ -8,7 +8,7 @@ public class Calculadora {
      * @param num2
      * @return num1+ num2.
      */
-    public static int  sumar (int num1, int num2){
+    public static float  sumar (float num1, float num2){
             
         return num1 + num2;
     }
@@ -19,7 +19,7 @@ public class Calculadora {
      * @param num2
      * @return num1 - num2.
      */
-    public static  int  restar (int num1, int num2){
+    public static  float  restar (float num1, float num2){
         
         return num1 - num2;
     }
@@ -30,7 +30,7 @@ public class Calculadora {
      * @param num2
      * @return num1 * num2.
      */
-    public static  int  multiplicar (int num1, int num2){
+    public static  float  multiplicar (float num1, float num2){
             
         return num1 * num2;
     }
@@ -41,7 +41,7 @@ public class Calculadora {
      * @param num2
      * @return num1 / num2.
      */
-    public static  float  dividir (int num1, int num2){
+    public static  float  dividir (float num1, float num2){
             
         if(num2 == 0) {
             
@@ -78,7 +78,7 @@ public class Calculadora {
         {
             for (int j = 1; j < i; j++)
             {
-                if (j*j == i)
+                if (multiplicar(j, j) == i)
                 {
                     cuadradoPerfectoNum1 = i;
                     raizCuadradaCuadradoPerfecto = j;
@@ -90,16 +90,16 @@ public class Calculadora {
         }
          
         //Calcula la diferencia entre num1 y su cuadrado perfecto más cercano   
-        float diferencia = num1 - cuadradoPerfectoNum1;    
+        float diferencia = restar(num1, cuadradoPerfectoNum1);    
          
         //Calcula P
-        float P = diferencia/(2.0f*raizCuadradaCuadradoPerfecto);
+        float P = dividir(diferencia, (multiplicar(2.0f, raizCuadradaCuadradoPerfecto)));
          
         //Calcula A
-        float A = raizCuadradaCuadradoPerfecto+P;
+        float A = sumar(raizCuadradaCuadradoPerfecto, P);
           
         //Calcula la raíz cuadrada solicitada.
-        float resultado = A-((P*P)/(2.0f*A));
+        float resultado = restar(A, (dividir(multiplicar(P, P), multiplicar(2.0f, A) )));
         
         return resultado;
     }

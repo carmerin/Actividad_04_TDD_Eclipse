@@ -16,18 +16,18 @@ public class CalculadoraSumaTest  extends CalculadoraBaseTest{
 		
 		//Arrange
 		//Definimos los numeros a sumar
-		int num1 = 1;
-		int num2 = 2;
+		float num1 = 1;
+		float num2 = 2;
 		//Definimos el resultado de la suma
-		int resultado = 3;
+		float resultado = 3;
 		
 		//Act
 		//Llamamos al metodo a testear
-		int suma = Calculadora.sumar(num1, num2);
+		float suma = Calculadora.sumar(num1, num2);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(suma, resultado);
+		Assert.assertEquals(suma, resultado, 0.00001);
 	}
 	
 	
@@ -39,18 +39,18 @@ public class CalculadoraSumaTest  extends CalculadoraBaseTest{
 		
 		//Arrange
 		//Definimos los numeros a sumar
-		int num1 = 1;
-		int num2 = 2;
+	    float num1 = 1;
+	    float num2 = 2;
 		//Definimos el resultado de la suma
-		int resultado = 3;
+	    float resultado = 3;
 		
 		//Act
 		//Llamamos al metodo a testear
-		int suma = Calculadora.sumar(num2, num1);
+	    float suma = Calculadora.sumar(num2, num1);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(suma, resultado);
+		Assert.assertEquals(suma, resultado, 0.00001);
 	}
 
 	/**
@@ -61,18 +61,18 @@ public class CalculadoraSumaTest  extends CalculadoraBaseTest{
 		
 		//Arrange
 		//Definimos los numeros a sumar
-		int num1 = 2;
-		int num2 = 0;
+	    float num1 = 2;
+	    float num2 = 0;
 		//Definimos el resultado de la suma
-		int resultado = 2;
+	    float resultado = 2;
 		
 		//Act
 		//Llamamos al metodo a testear
-		int suma = Calculadora.sumar(num2, num1);
+	    float suma = Calculadora.sumar(num2, num1);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(suma, resultado);
+		Assert.assertEquals(suma, resultado, 0.00001);
 	}
 	
 	/**
@@ -83,17 +83,17 @@ public class CalculadoraSumaTest  extends CalculadoraBaseTest{
 		
 		//Arrange
 		//Definimos los numeros a sumar
-		int num1 = 2;
-		int num2 = 3;
+	    float num1 = 2;
+	    float num2 = 3;
 		
 		//Act
 		//Llamamos al metodo a testear
-		int suma1 = Calculadora.sumar(num1, num2);
-		int suma2 = Calculadora.sumar(num2, num1);
+	    float suma1 = Calculadora.sumar(num1, num2);
+	    float suma2 = Calculadora.sumar(num2, num1);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
-		Assert.assertEquals(suma1, suma2);
+		Assert.assertEquals(suma1, suma2, 0.00001);
 	}
 	
 }
