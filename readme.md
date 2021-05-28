@@ -11,22 +11,12 @@ Es conveniente ejecutar las clases con JDK 1.7.
 
 Debemos ponernos en el directorio raíz del proyecto y ejecutar:
 
-<code>
-\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraSumaTest
-<br><br>
+`\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraSumaTest`
 
-<code>
-\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraRestaTest
-<br><br>
+`\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraRestaTest`
 
-<code>
-\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraMultiplicarTest
-<br><br>
+`\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraMultiplicarTest`
 
-<code>
-\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraDivideTest
-<br><br>
+`\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraDivideTest`
 
-<code>
-\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraRaizCuadradaTest
-<br><br>
+`\_c\jdk1.7.0_80\bin\java -cp ejecutable/* org.junit.runner.JUnitCore carmerin.calculadora.tests.CalculadoraRaizCuadradaTest`
