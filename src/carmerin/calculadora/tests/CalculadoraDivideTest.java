@@ -9,21 +9,21 @@ public class CalculadoraDivideTest  extends CalculadoraBaseTest{
 	
 	
 	/**
-	 * Test para sumar dos numeros
+	 * Test para dividir dos numeros
 	 */
 	@Test
 	public void testDivideDosNumeros(){
 		
 		//Arrange
-		//Definimos los n�meros a sumar
+		//Definimos los numeros a dividir
 		int num1 = 6;
 		int num2 = 2;
-		//Definimos el resultado de la suma
-		double resultado = 3.0d;
+		//Definimos el resultado
+		float resultado = 3.0f;
 		
 		//Act
 		//Llamamos al m�todo a testear
-		double cociente = Calculadora.dividir(num1, num2);
+		float cociente = Calculadora.dividir(num1, num2);
 		
 		//Assert
 		//Comprobamos que el resultado es correcto.
@@ -40,7 +40,7 @@ public class CalculadoraDivideTest  extends CalculadoraBaseTest{
 	    try {
 		
 	        //Arrange
-    		//Definimos los n�meros a sumar
+    		//Definimos los numeros a dividir
     		int num1 = 4;
     		int num2 = 0;
     		

@@ -9,20 +9,20 @@ public class CalculadoraMultiplicarTest  extends CalculadoraBaseTest{
 	
 	
 	/**
-	 * Test para sumar dos numeros
+	 * Test para multiplicar dos numeros enteros
 	 */
 	@Test
 	public void testMultiplicaDosNumeros(){
 		
 		//Arrange
-		//Definimos los n�meros a sumar
+		//Definimos los numeros a multiplicar
 		int num1 = 1;
 		int num2 = 2;
-		//Definimos el resultado de la suma
+		//Definimos el resultado de la multiplicación
 		int resultado = 2;
 		
 		//Act
-		//Llamamos al m�todo a testear
+		//Llamamos al metodo a testear
 		int producto = Calculadora.multiplicar(num1, num2);
 		
 		//Assert
@@ -32,20 +32,20 @@ public class CalculadoraMultiplicarTest  extends CalculadoraBaseTest{
 	
 	
 	/**
-	 * Test para sumar dos numeros invertidos. 
+	 * Test para multiplicar dos numeros invertidos. 
 	 */
 	@Test
 	public void testMultiplicaDosNumerosInvertidos(){
 		
 		//Arrange
-		//Definimos los n�meros a sumar
+		//Definimos los numeros a multiplicar
 		int num1 = 1;
 		int num2 = 2;
-		//Definimos el resultado de la suma
+		//Definimos el resultado
 		int resultado = 2;
 		
 		//Act
-		//Llamamos al m�todo a testear
+		//Llamamos al metodo a testear
 		int producto = Calculadora.multiplicar(num2, num1);
 		
 		//Assert
@@ -54,16 +54,16 @@ public class CalculadoraMultiplicarTest  extends CalculadoraBaseTest{
 	}
 
 	/**
-	 * Test para sumar cero
+	 * Test para multiplicar cero
 	 */
 	@Test
 	public void testMultiplicaCero(){
 		
 		//Arrange
-		//Definimos los n�meros a sumar
+		//Definimos los numeros a multiplicar
 		int num1 = 2;
 		int num2 = 0;
-		//Definimos el resultado de la suma
+		//Definimos el resultado
 		int resultado = 0;
 		
 		//Act
@@ -76,13 +76,33 @@ public class CalculadoraMultiplicarTest  extends CalculadoraBaseTest{
 	}
 	
 	/**
+     * Test para multiplicar uno
+     */
+    @Test
+    public void testMultiplicaUno(){
+        
+        //Arrange
+        //Definimos los numeros a multiplicar
+        int num1 = 2;
+        int num2 = 1;
+        
+        //Act
+        //Llamamos al metodo a testear
+        int producto = Calculadora.multiplicar(num1, num2);
+        
+        //Assert
+        //Comprobamos que el resultado es correcto.
+        Assert.assertEquals(producto, num1);
+    }
+	
+	/**
 	 * Test para conmutativa
 	 */
 	@Test
 	public void testMultiplicaConmutativa(){
 		
 		//Arrange
-		//Definimos los n�meros a sumar
+		//Definimos los numeros a multiplicar
 		int num1 = 2;
 		int num2 = 3;
 		

@@ -41,7 +41,7 @@ public class Calculadora {
      * @param num2
      * @return num1 / num2.
      */
-    public static  double  dividir (int num1, int num2){
+    public static  float  dividir (int num1, int num2){
             
         if(num2 == 0) {
             
