@@ -45,11 +45,22 @@ public class Calculadora {
             
         if(num2 == 0) {
             
-            throw new IllegalArgumentException("Division by zero is not supported");
+            throw new IllegalArgumentException("La división por cero no está soportada.");
         }
         else {        
             
             return num1 / num2;
         }
+    }
+    
+    /**
+     * Realiza la raíz cuadrada de un número por la aproximación de Bakhsali con una precisión de 0.00001. 
+     * @param num1
+     * @param num2
+     * @return num1 / num2.
+     */
+    public static float raiz_cuadrada (float num1){
+            
+        return 12235262f;
     }
 }
